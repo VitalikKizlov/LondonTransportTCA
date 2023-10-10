@@ -14,6 +14,7 @@
 		FBCAA0322AD5B02300D96286 /* LondonTransportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA0312AD5B02300D96286 /* LondonTransportTests.swift */; };
 		FBCAA03C2AD5B02300D96286 /* LondonTransportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA03B2AD5B02300D96286 /* LondonTransportUITests.swift */; };
 		FBCAA03E2AD5B02300D96286 /* LondonTransportUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA03D2AD5B02300D96286 /* LondonTransportUITestsLaunchTests.swift */; };
+		FBCAA04C2AD5B1E200D96286 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = FBCAA04B2AD5B1E200D96286 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBCAA04C2AD5B1E200D96286 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = LondonTransport;
+			packageProductDependencies = (
+				FBCAA04B2AD5B1E200D96286 /* ComposableArchitecture */,
+			);
 			productName = LondonTransport;
 			productReference = FBCAA01D2AD5B02200D96286 /* LondonTransport.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = FBCAA0142AD5B02200D96286;
+			packageReferences = (
+				FBCAA04A2AD5B1E200D96286 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = FBCAA01E2AD5B02200D96286 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -588,6 +596,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FBCAA04A2AD5B1E200D96286 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FBCAA04B2AD5B1E200D96286 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBCAA04A2AD5B1E200D96286 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FBCAA0152AD5B02200D96286 /* Project object */;
 }
