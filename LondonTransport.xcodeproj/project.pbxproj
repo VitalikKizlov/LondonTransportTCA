@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBCAA0212AD5B02200D96286 /* LondonTransportApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA0202AD5B02200D96286 /* LondonTransportApp.swift */; };
+		FBCAA0232AD5B02200D96286 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA0222AD5B02200D96286 /* ContentView.swift */; };
+		FBCAA0252AD5B02300D96286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBCAA0242AD5B02300D96286 /* Assets.xcassets */; };
+		FBCAA0282AD5B02300D96286 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBCAA0272AD5B02300D96286 /* Preview Assets.xcassets */; };
+		FBCAA0322AD5B02300D96286 /* LondonTransportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA0312AD5B02300D96286 /* LondonTransportTests.swift */; };
+		FBCAA03C2AD5B02300D96286 /* LondonTransportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA03B2AD5B02300D96286 /* LondonTransportUITests.swift */; };
+		FBCAA03E2AD5B02300D96286 /* LondonTransportUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA03D2AD5B02300D96286 /* LondonTransportUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBCAA02E2AD5B02300D96286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBCAA0152AD5B02200D96286 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBCAA01C2AD5B02200D96286;
+			remoteInfo = LondonTransport;
+		};
+		FBCAA0382AD5B02300D96286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBCAA0152AD5B02200D96286 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBCAA01C2AD5B02200D96286;
+			remoteInfo = LondonTransport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBCAA01D2AD5B02200D96286 /* LondonTransport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LondonTransport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBCAA0202AD5B02200D96286 /* LondonTransportApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LondonTransportApp.swift; sourceTree = "<group>"; };
+		FBCAA0222AD5B02200D96286 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBCAA0242AD5B02300D96286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBCAA0272AD5B02300D96286 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBCAA02D2AD5B02300D96286 /* LondonTransportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LondonTransportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBCAA0312AD5B02300D96286 /* LondonTransportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LondonTransportTests.swift; sourceTree = "<group>"; };
+		FBCAA0372AD5B02300D96286 /* LondonTransportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LondonTransportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBCAA03B2AD5B02300D96286 /* LondonTransportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LondonTransportUITests.swift; sourceTree = "<group>"; };
+		FBCAA03D2AD5B02300D96286 /* LondonTransportUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LondonTransportUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBCAA01A2AD5B02200D96286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBCAA02A2AD5B02300D96286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBCAA0342AD5B02300D96286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBCAA0142AD5B02200D96286 = {
+			isa = PBXGroup;
+			children = (
+				FBCAA01F2AD5B02200D96286 /* LondonTransport */,
+				FBCAA0302AD5B02300D96286 /* LondonTransportTests */,
+				FBCAA03A2AD5B02300D96286 /* LondonTransportUITests */,
+				FBCAA01E2AD5B02200D96286 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBCAA01E2AD5B02200D96286 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBCAA01D2AD5B02200D96286 /* LondonTransport.app */,
+				FBCAA02D2AD5B02300D96286 /* LondonTransportTests.xctest */,
+				FBCAA0372AD5B02300D96286 /* LondonTransportUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBCAA01F2AD5B02200D96286 /* LondonTransport */ = {
+			isa = PBXGroup;
+			children = (
+				FBCAA0202AD5B02200D96286 /* LondonTransportApp.swift */,
+				FBCAA0222AD5B02200D96286 /* ContentView.swift */,
+				FBCAA0242AD5B02300D96286 /* Assets.xcassets */,
+				FBCAA0262AD5B02300D96286 /* Preview Content */,
+			);
+			path = LondonTransport;
+			sourceTree = "<group>";
+		};
+		FBCAA0262AD5B02300D96286 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBCAA0272AD5B02300D96286 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBCAA0302AD5B02300D96286 /* LondonTransportTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBCAA0312AD5B02300D96286 /* LondonTransportTests.swift */,
+			);
+			path = LondonTransportTests;
+			sourceTree = "<group>";
+		};
+		FBCAA03A2AD5B02300D96286 /* LondonTransportUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBCAA03B2AD5B02300D96286 /* LondonTransportUITests.swift */,
+				FBCAA03D2AD5B02300D96286 /* LondonTransportUITestsLaunchTests.swift */,
+			);
+			path = LondonTransportUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBCAA01C2AD5B02200D96286 /* LondonTransport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBCAA0412AD5B02300D96286 /* Build configuration list for PBXNativeTarget "LondonTransport" */;
+			buildPhases = (
+				FBCAA0192AD5B02200D96286 /* Sources */,
+				FBCAA01A2AD5B02200D96286 /* Frameworks */,
+				FBCAA01B2AD5B02200D96286 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LondonTransport;
+			productName = LondonTransport;
+			productReference = FBCAA01D2AD5B02200D96286 /* LondonTransport.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBCAA02C2AD5B02300D96286 /* LondonTransportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBCAA0442AD5B02300D96286 /* Build configuration list for PBXNativeTarget "LondonTransportTests" */;
+			buildPhases = (
+				FBCAA0292AD5B02300D96286 /* Sources */,
+				FBCAA02A2AD5B02300D96286 /* Frameworks */,
+				FBCAA02B2AD5B02300D96286 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBCAA02F2AD5B02300D96286 /* PBXTargetDependency */,
+			);
+			name = LondonTransportTests;
+			productName = LondonTransportTests;
+			productReference = FBCAA02D2AD5B02300D96286 /* LondonTransportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBCAA0362AD5B02300D96286 /* LondonTransportUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBCAA0472AD5B02300D96286 /* Build configuration list for PBXNativeTarget "LondonTransportUITests" */;
+			buildPhases = (
+				FBCAA0332AD5B02300D96286 /* Sources */,
+				FBCAA0342AD5B02300D96286 /* Frameworks */,
+				FBCAA0352AD5B02300D96286 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBCAA0392AD5B02300D96286 /* PBXTargetDependency */,
+			);
+			name = LondonTransportUITests;
+			productName = LondonTransportUITests;
+			productReference = FBCAA0372AD5B02300D96286 /* LondonTransportUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBCAA0152AD5B02200D96286 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FBCAA01C2AD5B02200D96286 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					FBCAA02C2AD5B02300D96286 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FBCAA01C2AD5B02200D96286;
+					};
+					FBCAA0362AD5B02300D96286 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FBCAA01C2AD5B02200D96286;
+					};
+				};
+			};
+			buildConfigurationList = FBCAA0182AD5B02200D96286 /* Build configuration list for PBXProject "LondonTransport" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBCAA0142AD5B02200D96286;
+			productRefGroup = FBCAA01E2AD5B02200D96286 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBCAA01C2AD5B02200D96286 /* LondonTransport */,
+				FBCAA02C2AD5B02300D96286 /* LondonTransportTests */,
+				FBCAA0362AD5B02300D96286 /* LondonTransportUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBCAA01B2AD5B02200D96286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBCAA0282AD5B02300D96286 /* Preview Assets.xcassets in Resources */,
+				FBCAA0252AD5B02300D96286 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBCAA02B2AD5B02300D96286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBCAA0352AD5B02300D96286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBCAA0192AD5B02200D96286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBCAA0232AD5B02200D96286 /* ContentView.swift in Sources */,
+				FBCAA0212AD5B02200D96286 /* LondonTransportApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBCAA0292AD5B02300D96286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBCAA0322AD5B02300D96286 /* LondonTransportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBCAA0332AD5B02300D96286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBCAA03E2AD5B02300D96286 /* LondonTransportUITestsLaunchTests.swift in Sources */,
+				FBCAA03C2AD5B02300D96286 /* LondonTransportUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBCAA02F2AD5B02300D96286 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBCAA01C2AD5B02200D96286 /* LondonTransport */;
+			targetProxy = FBCAA02E2AD5B02300D96286 /* PBXContainerItemProxy */;
+		};
+		FBCAA0392AD5B02300D96286 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBCAA01C2AD5B02200D96286 /* LondonTransport */;
+			targetProxy = FBCAA0382AD5B02300D96286 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FBCAA03F2AD5B02300D96286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBCAA0402AD5B02300D96286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBCAA0422AD5B02300D96286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LondonTransport/Preview Content\"";
+				DEVELOPMENT_TEAM = 3PJX8UJTF8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LondonTransport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBCAA0432AD5B02300D96286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LondonTransport/Preview Content\"";
+				DEVELOPMENT_TEAM = 3PJX8UJTF8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LondonTransport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBCAA0452AD5B02300D96286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3PJX8UJTF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LondonTransportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LondonTransport.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LondonTransport";
+			};
+			name = Debug;
+		};
+		FBCAA0462AD5B02300D96286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3PJX8UJTF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LondonTransportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LondonTransport.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LondonTransport";
+			};
+			name = Release;
+		};
+		FBCAA0482AD5B02300D96286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3PJX8UJTF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LondonTransportUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LondonTransport;
+			};
+			name = Debug;
+		};
+		FBCAA0492AD5B02300D96286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3PJX8UJTF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LondonTransportUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LondonTransport;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBCAA0182AD5B02200D96286 /* Build configuration list for PBXProject "LondonTransport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBCAA03F2AD5B02300D96286 /* Debug */,
+				FBCAA0402AD5B02300D96286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBCAA0412AD5B02300D96286 /* Build configuration list for PBXNativeTarget "LondonTransport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBCAA0422AD5B02300D96286 /* Debug */,
+				FBCAA0432AD5B02300D96286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBCAA0442AD5B02300D96286 /* Build configuration list for PBXNativeTarget "LondonTransportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBCAA0452AD5B02300D96286 /* Debug */,
+				FBCAA0462AD5B02300D96286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBCAA0472AD5B02300D96286 /* Build configuration list for PBXNativeTarget "LondonTransportUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBCAA0482AD5B02300D96286 /* Debug */,
+				FBCAA0492AD5B02300D96286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBCAA0152AD5B02200D96286 /* Project object */;
+}
