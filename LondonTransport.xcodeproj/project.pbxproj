@@ -15,6 +15,15 @@
 		FBCAA03C2AD5B02300D96286 /* LondonTransportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA03B2AD5B02300D96286 /* LondonTransportUITests.swift */; };
 		FBCAA03E2AD5B02300D96286 /* LondonTransportUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA03D2AD5B02300D96286 /* LondonTransportUITestsLaunchTests.swift */; };
 		FBCAA04C2AD5B1E200D96286 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = FBCAA04B2AD5B1E200D96286 /* ComposableArchitecture */; };
+		FBCAA04F2AD5B24B00D96286 /* APISessionProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA04E2AD5B24B00D96286 /* APISessionProviding.swift */; };
+		FBCAA0512AD5B84300D96286 /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA0502AD5B84300D96286 /* APISession.swift */; };
+		FBCAA0532AD5B88000D96286 /* RequestProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA0522AD5B88000D96286 /* RequestProviding.swift */; };
+		FBCAA0552AD5B92200D96286 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA0542AD5B92200D96286 /* APIError.swift */; };
+		FBCAA0572AD5C0CC00D96286 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA0562AD5C0CC00D96286 /* HTTPMethod.swift */; };
+		FBCAA0592AD5C2B800D96286 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA0582AD5C2B800D96286 /* Constants.swift */; };
+		FBCAA05B2AD5C65800D96286 /* BusStopService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA05A2AD5C65800D96286 /* BusStopService.swift */; };
+		FBCAA05D2AD5C6EA00D96286 /* BusStopEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA05C2AD5C6EA00D96286 /* BusStopEndpoint.swift */; };
+		FBCAA0602AD5C76600D96286 /* TravelInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA05F2AD5C76600D96286 /* TravelInformation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,15 @@
 		FBCAA0372AD5B02300D96286 /* LondonTransportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LondonTransportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCAA03B2AD5B02300D96286 /* LondonTransportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LondonTransportUITests.swift; sourceTree = "<group>"; };
 		FBCAA03D2AD5B02300D96286 /* LondonTransportUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LondonTransportUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBCAA04E2AD5B24B00D96286 /* APISessionProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISessionProviding.swift; sourceTree = "<group>"; };
+		FBCAA0502AD5B84300D96286 /* APISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
+		FBCAA0522AD5B88000D96286 /* RequestProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProviding.swift; sourceTree = "<group>"; };
+		FBCAA0542AD5B92200D96286 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		FBCAA0562AD5C0CC00D96286 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		FBCAA0582AD5C2B800D96286 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FBCAA05A2AD5C65800D96286 /* BusStopService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopService.swift; sourceTree = "<group>"; };
+		FBCAA05C2AD5C6EA00D96286 /* BusStopEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopEndpoint.swift; sourceTree = "<group>"; };
+		FBCAA05F2AD5C76600D96286 /* TravelInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInformation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +114,15 @@
 		FBCAA01F2AD5B02200D96286 /* LondonTransport */ = {
 			isa = PBXGroup;
 			children = (
+				FBCAA05E2AD5C75C00D96286 /* Domain */,
+				FBCAA04D2AD5B22900D96286 /* Networking */,
 				FBCAA0202AD5B02200D96286 /* LondonTransportApp.swift */,
 				FBCAA0222AD5B02200D96286 /* ContentView.swift */,
 				FBCAA0242AD5B02300D96286 /* Assets.xcassets */,
 				FBCAA0262AD5B02300D96286 /* Preview Content */,
+				FBCAA0582AD5C2B800D96286 /* Constants.swift */,
+				FBCAA05A2AD5C65800D96286 /* BusStopService.swift */,
+				FBCAA05C2AD5C6EA00D96286 /* BusStopEndpoint.swift */,
 			);
 			path = LondonTransport;
 			sourceTree = "<group>";
@@ -127,6 +150,26 @@
 				FBCAA03D2AD5B02300D96286 /* LondonTransportUITestsLaunchTests.swift */,
 			);
 			path = LondonTransportUITests;
+			sourceTree = "<group>";
+		};
+		FBCAA04D2AD5B22900D96286 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FBCAA04E2AD5B24B00D96286 /* APISessionProviding.swift */,
+				FBCAA0502AD5B84300D96286 /* APISession.swift */,
+				FBCAA0522AD5B88000D96286 /* RequestProviding.swift */,
+				FBCAA0542AD5B92200D96286 /* APIError.swift */,
+				FBCAA0562AD5C0CC00D96286 /* HTTPMethod.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		FBCAA05E2AD5C75C00D96286 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FBCAA05F2AD5C76600D96286 /* TravelInformation.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +308,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBCAA0602AD5C76600D96286 /* TravelInformation.swift in Sources */,
+				FBCAA0532AD5B88000D96286 /* RequestProviding.swift in Sources */,
 				FBCAA0232AD5B02200D96286 /* ContentView.swift in Sources */,
+				FBCAA0572AD5C0CC00D96286 /* HTTPMethod.swift in Sources */,
+				FBCAA0512AD5B84300D96286 /* APISession.swift in Sources */,
+				FBCAA04F2AD5B24B00D96286 /* APISessionProviding.swift in Sources */,
+				FBCAA05D2AD5C6EA00D96286 /* BusStopEndpoint.swift in Sources */,
 				FBCAA0212AD5B02200D96286 /* LondonTransportApp.swift in Sources */,
+				FBCAA0552AD5B92200D96286 /* APIError.swift in Sources */,
+				FBCAA05B2AD5C65800D96286 /* BusStopService.swift in Sources */,
+				FBCAA0592AD5C2B800D96286 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
