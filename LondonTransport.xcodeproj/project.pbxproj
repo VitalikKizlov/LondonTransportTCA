@@ -118,17 +118,16 @@
 		FBCAA01F2AD5B02200D96286 /* LondonTransport */ = {
 			isa = PBXGroup;
 			children = (
-				FBCAA0682AD6B7FE00D96286 /* View */,
-				FBCAA0642AD6AD7D00D96286 /* Dependencies */,
-				FBCAA0612AD6AC1900D96286 /* Feature */,
-				FBCAA05E2AD5C75C00D96286 /* Domain */,
-				FBCAA04D2AD5B22900D96286 /* Networking */,
+				FBCAA0582AD5C2B800D96286 /* Constants.swift */,
 				FBCAA0202AD5B02200D96286 /* LondonTransportApp.swift */,
 				FBCAA0242AD5B02300D96286 /* Assets.xcassets */,
+				FBCAA05E2AD5C75C00D96286 /* Domain */,
+				FBCAA06E2AD6CB5400D96286 /* Endpoint */,
+				FBCAA0612AD6AC1900D96286 /* Feature */,
+				FBCAA04D2AD5B22900D96286 /* Networking */,
 				FBCAA0262AD5B02300D96286 /* Preview Content */,
-				FBCAA0582AD5C2B800D96286 /* Constants.swift */,
-				FBCAA05A2AD5C65800D96286 /* BusStopService.swift */,
-				FBCAA05C2AD5C6EA00D96286 /* BusStopEndpoint.swift */,
+				FBCAA06D2AD6CB4B00D96286 /* Service */,
+				FBCAA0682AD6B7FE00D96286 /* View */,
 			);
 			path = LondonTransport;
 			sourceTree = "<group>";
@@ -186,13 +185,6 @@
 			path = Feature;
 			sourceTree = "<group>";
 		};
-		FBCAA0642AD6AD7D00D96286 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Dependencies;
-			sourceTree = "<group>";
-		};
 		FBCAA0682AD6B7FE00D96286 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +192,22 @@
 				FBCAA06B2AD6C66B00D96286 /* BusStopRow.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FBCAA06D2AD6CB4B00D96286 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FBCAA05A2AD5C65800D96286 /* BusStopService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FBCAA06E2AD6CB5400D96286 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				FBCAA05C2AD5C6EA00D96286 /* BusStopEndpoint.swift */,
+			);
+			path = Endpoint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
