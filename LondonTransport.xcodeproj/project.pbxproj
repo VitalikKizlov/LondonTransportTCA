@@ -25,6 +25,7 @@
 		FBCAA0602AD5C76600D96286 /* TravelInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA05F2AD5C76600D96286 /* TravelInformation.swift */; };
 		FBCAA0632AD6AC3200D96286 /* BusStopFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA0622AD6AC3200D96286 /* BusStopFeature.swift */; };
 		FBCAA06A2AD6B80500D96286 /* BusStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA0692AD6B80500D96286 /* BusStopView.swift */; };
+		FBCAA06C2AD6C66B00D96286 /* BusStopRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA06B2AD6C66B00D96286 /* BusStopRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		FBCAA05F2AD5C76600D96286 /* TravelInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInformation.swift; sourceTree = "<group>"; };
 		FBCAA0622AD6AC3200D96286 /* BusStopFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopFeature.swift; sourceTree = "<group>"; };
 		FBCAA0692AD6B80500D96286 /* BusStopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopView.swift; sourceTree = "<group>"; };
+		FBCAA06B2AD6C66B00D96286 /* BusStopRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				FBCAA0692AD6B80500D96286 /* BusStopView.swift */,
+				FBCAA06B2AD6C66B00D96286 /* BusStopRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				FBCAA04F2AD5B24B00D96286 /* APISessionProviding.swift in Sources */,
 				FBCAA06A2AD6B80500D96286 /* BusStopView.swift in Sources */,
 				FBCAA05D2AD5C6EA00D96286 /* BusStopEndpoint.swift in Sources */,
+				FBCAA06C2AD6C66B00D96286 /* BusStopRow.swift in Sources */,
 				FBCAA0632AD6AC3200D96286 /* BusStopFeature.swift in Sources */,
 				FBCAA0212AD5B02200D96286 /* LondonTransportApp.swift in Sources */,
 				FBCAA0552AD5B92200D96286 /* APIError.swift in Sources */,
