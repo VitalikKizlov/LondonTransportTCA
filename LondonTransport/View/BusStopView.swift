@@ -12,29 +12,29 @@ struct BusStopView: View {
     let store: StoreOf<BusStopFeature>
 
     var body: some View {
-        WithViewStore(self.store, observe: { $0 }) { viewStore in
-            NavigationStack {
+        NavigationStackStore(self.store.scope(state: \.path, action: { .path($0) })) {
+            WithViewStore(self.store, observe: { $0 }) { viewStore in
                 VStack {
-                    ProgressView()
-                        .frame(maxWidth: .infinity)
-                        .opacity(viewStore.state.loadingState == .loading ? 1 : 0)
-
-                    List {
-                        ForEach(viewStore.state.listOfBusStops, id: \.id) { stop in
-                            Button {
-                                //viewStore.send(.selectStop(stop: stop))
-                                print("stop is \(stop)")
-                            } label: {
-                                BusStopRow(busStop: stop)
+                    if viewStore.state.loadingState == .loading {
+                        ProgressView()
+                            .frame(maxWidth: .infinity)
+                    } else {
+                        List {
+                            ForEach(viewStore.state.busStops, id: \.id) { stop in
+                                NavigationLink(state: ArrivalTimeFeature.State(busStop: stop)) {
+                                    BusStopRow(busStop: stop)
+                                }
                             }
                         }
+                        .listStyle(.plain)
                     }
-                    .listStyle(.plain)
                 }
                 .onAppear {
                     viewStore.send(.onAppear)
                 }
             }
+        } destination: { store in
+            ArrivalTimeView(store: store)
         }
     }
 }

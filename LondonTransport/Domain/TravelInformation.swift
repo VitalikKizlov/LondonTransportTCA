@@ -14,16 +14,15 @@ struct TravelInformation: Codable {
 extension TravelInformation: Equatable {}
 
 struct BusStop: Codable, Hashable  {
-    var id: String
-
+    let id: String
     var naptanId: String
     var commonName: String
     var lines: [Lines]
 }
 
 extension BusStop: Identifiable {
-    var identifier: String {
-        return id
+    var identifier: UUID {
+        return UUID()
     }
 }
 
