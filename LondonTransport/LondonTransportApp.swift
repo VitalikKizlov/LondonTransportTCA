@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct LondonTransportApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BusStopView(store: Store(initialState: BusStopFeature.State(), reducer: {
+                BusStopFeature()
+            }))
         }
     }
 }

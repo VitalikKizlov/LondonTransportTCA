@@ -6,15 +6,32 @@
 //
 
 import Foundation
+import ComposableArchitecture
 
 protocol BusStopServiceProtocol {
-    func getTopRated() async throws -> TravelInformation
+    func getTravelInformation() async throws -> TravelInformation
 }
 
 struct BusStopService: BusStopServiceProtocol {
-    func getTopRated() async throws -> TravelInformation {
-        let session = ApiSession()
-        let provider = BusStopEndpoint.stopPoint(coordinate: (latitude: 51.5, longitude: 0.12))
-        return try await session.execute(provider)
+    let session: APISessionProviding
+
+    init(session: APISessionProviding = ApiSession()) {
+        self.session = session
     }
+
+    func getTravelInformation() async throws -> TravelInformation {
+        let endpoint = BusStopEndpoint.stopPoint(coordinate: (latitude: 51.5, longitude: 0.12))
+        return try await session.execute(endpoint)
+    }
+}
+
+extension BusStopService: DependencyKey {
+    static let liveValue = BusStopService()
+}
+
+extension DependencyValues {
+  var busStopService: BusStopService {
+    get { self[BusStopService.self] }
+    set { self[BusStopService.self] = newValue }
+  }
 }

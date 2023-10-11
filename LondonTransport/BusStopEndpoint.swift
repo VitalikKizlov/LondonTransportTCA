@@ -20,15 +20,15 @@ extension BusStopEndpoint: RequestProviding {
     }
 
     var host: String {
-        return "https://api.tfl.gov.uk"
+        return "api.tfl.gov.uk"
     }
 
     var path: String {
         switch self {
         case .stopPoint:
-            return "Stoppoint"
+            return "/Stoppoint"
         case .arrivals(let busStopID):
-            return "Stoppoint/\(busStopID)/" + "/Arrivals"
+            return "/Stoppoint/\(busStopID)/" + "/Arrivals"
         }
     }
 

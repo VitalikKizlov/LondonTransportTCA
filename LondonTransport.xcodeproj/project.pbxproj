@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FBCAA0212AD5B02200D96286 /* LondonTransportApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA0202AD5B02200D96286 /* LondonTransportApp.swift */; };
-		FBCAA0232AD5B02200D96286 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA0222AD5B02200D96286 /* ContentView.swift */; };
 		FBCAA0252AD5B02300D96286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBCAA0242AD5B02300D96286 /* Assets.xcassets */; };
 		FBCAA0282AD5B02300D96286 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBCAA0272AD5B02300D96286 /* Preview Assets.xcassets */; };
 		FBCAA0322AD5B02300D96286 /* LondonTransportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA0312AD5B02300D96286 /* LondonTransportTests.swift */; };
@@ -24,6 +23,8 @@
 		FBCAA05B2AD5C65800D96286 /* BusStopService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA05A2AD5C65800D96286 /* BusStopService.swift */; };
 		FBCAA05D2AD5C6EA00D96286 /* BusStopEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA05C2AD5C6EA00D96286 /* BusStopEndpoint.swift */; };
 		FBCAA0602AD5C76600D96286 /* TravelInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA05F2AD5C76600D96286 /* TravelInformation.swift */; };
+		FBCAA0632AD6AC3200D96286 /* BusStopFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA0622AD6AC3200D96286 /* BusStopFeature.swift */; };
+		FBCAA06A2AD6B80500D96286 /* BusStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAA0692AD6B80500D96286 /* BusStopView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,6 @@
 /* Begin PBXFileReference section */
 		FBCAA01D2AD5B02200D96286 /* LondonTransport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LondonTransport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCAA0202AD5B02200D96286 /* LondonTransportApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LondonTransportApp.swift; sourceTree = "<group>"; };
-		FBCAA0222AD5B02200D96286 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FBCAA0242AD5B02300D96286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBCAA0272AD5B02300D96286 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FBCAA02D2AD5B02300D96286 /* LondonTransportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LondonTransportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +63,8 @@
 		FBCAA05A2AD5C65800D96286 /* BusStopService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopService.swift; sourceTree = "<group>"; };
 		FBCAA05C2AD5C6EA00D96286 /* BusStopEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopEndpoint.swift; sourceTree = "<group>"; };
 		FBCAA05F2AD5C76600D96286 /* TravelInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInformation.swift; sourceTree = "<group>"; };
+		FBCAA0622AD6AC3200D96286 /* BusStopFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopFeature.swift; sourceTree = "<group>"; };
+		FBCAA0692AD6B80500D96286 /* BusStopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +116,12 @@
 		FBCAA01F2AD5B02200D96286 /* LondonTransport */ = {
 			isa = PBXGroup;
 			children = (
+				FBCAA0682AD6B7FE00D96286 /* View */,
+				FBCAA0642AD6AD7D00D96286 /* Dependencies */,
+				FBCAA0612AD6AC1900D96286 /* Feature */,
 				FBCAA05E2AD5C75C00D96286 /* Domain */,
 				FBCAA04D2AD5B22900D96286 /* Networking */,
 				FBCAA0202AD5B02200D96286 /* LondonTransportApp.swift */,
-				FBCAA0222AD5B02200D96286 /* ContentView.swift */,
 				FBCAA0242AD5B02300D96286 /* Assets.xcassets */,
 				FBCAA0262AD5B02300D96286 /* Preview Content */,
 				FBCAA0582AD5C2B800D96286 /* Constants.swift */,
@@ -170,6 +174,29 @@
 				FBCAA05F2AD5C76600D96286 /* TravelInformation.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		FBCAA0612AD6AC1900D96286 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				FBCAA0622AD6AC3200D96286 /* BusStopFeature.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		FBCAA0642AD6AD7D00D96286 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		FBCAA0682AD6B7FE00D96286 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBCAA0692AD6B80500D96286 /* BusStopView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,11 +337,12 @@
 			files = (
 				FBCAA0602AD5C76600D96286 /* TravelInformation.swift in Sources */,
 				FBCAA0532AD5B88000D96286 /* RequestProviding.swift in Sources */,
-				FBCAA0232AD5B02200D96286 /* ContentView.swift in Sources */,
 				FBCAA0572AD5C0CC00D96286 /* HTTPMethod.swift in Sources */,
 				FBCAA0512AD5B84300D96286 /* APISession.swift in Sources */,
 				FBCAA04F2AD5B24B00D96286 /* APISessionProviding.swift in Sources */,
+				FBCAA06A2AD6B80500D96286 /* BusStopView.swift in Sources */,
 				FBCAA05D2AD5C6EA00D96286 /* BusStopEndpoint.swift in Sources */,
+				FBCAA0632AD6AC3200D96286 /* BusStopFeature.swift in Sources */,
 				FBCAA0212AD5B02200D96286 /* LondonTransportApp.swift in Sources */,
 				FBCAA0552AD5B92200D96286 /* APIError.swift in Sources */,
 				FBCAA05B2AD5C65800D96286 /* BusStopService.swift in Sources */,
