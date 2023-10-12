@@ -50,7 +50,7 @@ struct ArrivalTimeFeature: Reducer {
                 }
             case .arrivalTime(.success(let arrivals)):
                 state.loadingState = .loaded
-                state.arrivalTimes = arrivals
+                state.arrivalTimes = arrivals.sorted(by: { $0.timeToStation < $1.timeToStation })
                 return .none
             case .arrivalTime(.failure(let error)):
                 state.loadingState = .error
