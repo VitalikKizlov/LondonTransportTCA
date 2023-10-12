@@ -47,12 +47,9 @@ struct BusStopFeature: Reducer {
             case .onAppear:
                 state.loadingState = .loading
                 return .run { send in
-                    do {
-                        let information = try await self.busStopService.getTravelInformation()
-                        await send(.travelInformation(.success(information)))
-                    } catch {
-                        await send(.travelInformation(.failure(error)))
-                    }
+                    await send(.travelInformation(
+                        TaskResult { try await self.busStopService.getTravelInformation() }
+                    ))
                 }
             case .travelInformation(.success(let information)):
                 state.loadingState = .loaded
@@ -79,12 +76,9 @@ struct BusStopFeature: Reducer {
             case .alert(.presented(.retry)):
                 state.loadingState = .loading
                 return .run { send in
-                    do {
-                        let information = try await self.busStopService.getTravelInformation()
-                        await send(.travelInformation(.success(information)))
-                    } catch {
-                        await send(.travelInformation(.failure(error)))
-                    }
+                    await send(.travelInformation(
+                        TaskResult { try await self.busStopService.getTravelInformation() }
+                    ))
                 }
             case .alert(.dismiss):
                 return .none

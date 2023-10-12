@@ -41,12 +41,9 @@ struct ArrivalTimeFeature: Reducer {
                 state.loadingState = .loading
                 let id = state.busStop.id
                 return .run { send in
-                    do {
-                        let arrivals = try await self.busStopService.getArrivals(id)
-                        await send(.arrivalTime(.success(arrivals)))
-                    } catch {
-                        await send(.arrivalTime(.failure(error)))
-                    }
+                    await send(.arrivalTime(
+                        TaskResult { try await self.busStopService.getArrivals(id) }
+                    ))
                 }
             case .arrivalTime(.success(let arrivals)):
                 state.loadingState = .loaded
