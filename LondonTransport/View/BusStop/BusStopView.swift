@@ -35,6 +35,7 @@ struct BusStopView: View {
                         }
                     }
                 }
+                .navigationTitle("Bus stops")
                 .alert(store: self.store.scope(state: \.$alert, action: { .alert($0) }))
                 .onAppear {
                     viewStore.send(.onAppear)
