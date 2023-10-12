@@ -34,14 +34,36 @@ struct ArrivalTimeFeature: Reducer {
         case alertDismissed
     }
 
-    func reduce(into state: inout State, action: Action) -> Effect<Action> {
-        switch action {
-        case .onAppear:
-            return .none
-        case .arrivalTime(let taskResult):
-            return .none
-        case .alertDismissed:
-            return .none
+    var body: some ReducerOf<Self> {
+        Reduce { state, action in
+            switch action {
+            case .onAppear:
+                state.loadingState = .loading
+                let id = state.busStop.id
+                return .run { send in
+                    do {
+                        let arrivals = try await self.busStopService.getArrivals(id)
+                        await send(.arrivalTime(.success(arrivals)))
+                    } catch {
+                        await send(.arrivalTime(.failure(error)))
+                    }
+                }
+            case .arrivalTime(.success(let arrivals)):
+                state.loadingState = .loaded
+                state.arrivalTimes = arrivals
+                return .none
+            case .arrivalTime(.failure(let error)):
+                state.loadingState = .error
+                state.alert = AlertState(
+                    title: TextState("Error! Unable to retrieve bus arrival times."),
+                    message: TextState(error.localizedDescription),
+                    dismissButton: .default(TextState("OK"), action: .send(.alertDismissed))
+                )
+                return .none
+            case .alertDismissed:
+                state.alert = .none
+                return .none
+            }
         }
     }
 }

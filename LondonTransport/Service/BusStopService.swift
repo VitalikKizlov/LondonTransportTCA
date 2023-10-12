@@ -10,6 +10,7 @@ import ComposableArchitecture
 
 protocol BusStopServiceProtocol {
     func getTravelInformation() async throws -> TravelInformation
+    func getArrivals(_ id: String) async throws -> [ArrivalTime]
 }
 
 struct BusStopService: BusStopServiceProtocol {
@@ -21,6 +22,11 @@ struct BusStopService: BusStopServiceProtocol {
 
     func getTravelInformation() async throws -> TravelInformation {
         let endpoint = BusStopEndpoint.stopPoint(coordinate: (latitude: 51.5, longitude: 0.12))
+        return try await session.execute(endpoint)
+    }
+
+    func getArrivals(_ id: String) async throws -> [ArrivalTime] {
+        let endpoint = BusStopEndpoint.arrivals(busStopID: id)
         return try await session.execute(endpoint)
     }
 }

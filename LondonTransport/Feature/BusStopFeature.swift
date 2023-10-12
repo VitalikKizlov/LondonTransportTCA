@@ -24,7 +24,7 @@ struct BusStopFeature: Reducer {
     struct State: Equatable {
         var loadingState: LoadingState = .notStarted
         var busStops: IdentifiedArrayOf<BusStop> = []
-        var alert: AlertState<Action>?
+        @PresentationState var alert: AlertState<Action.Alert>?
         var selectedStop: BusStop?
         var isSheetPresented = false
         var path = StackState<ArrivalTimeFeature.State>()
@@ -33,12 +33,15 @@ struct BusStopFeature: Reducer {
     enum Action: Equatable {
         case onAppear
         case travelInformation(TaskResult<TravelInformation>)
-        case alertDismissed
         case presentSheet(Bool)
         case path(StackAction<ArrivalTimeFeature.State, ArrivalTimeFeature.Action>)
+        case alert(PresentationAction<Alert>)
+        enum Alert: Equatable {
+            case retry
+        }
     }
 
-    public var body: some ReducerOf<Self> {
+    var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
             case .onAppear:
@@ -56,25 +59,38 @@ struct BusStopFeature: Reducer {
                 state.busStops.append(contentsOf: information.stopPoints)
                 return .none
             case .travelInformation(.failure(let error)):
-                print("TravelInformation failed with error --- \(error)")
                 state.loadingState = .error
-                state.alert = AlertState(
-                    title: TextState("Error! Unable to retrieve your local bus stop data."),
-                    message: TextState(error.localizedDescription),
-                    dismissButton: .default(TextState("OK"), action: .send(.alertDismissed))
-                )
-                return .none
-            case .alertDismissed:
-                state.alert = .none
+                state.alert = AlertState {
+                    TextState("Error! Unable to retrieve your local bus stop data.")
+                } actions: {
+                    ButtonState(role: .cancel, action: .retry) {
+                        TextState("Retry")
+                    }
+                } message: {
+                    TextState(error.localizedDescription)
+                }
                 return .none
             case .presentSheet(let isPresented):
                 state.isSheetPresented = isPresented
                 state.selectedStop = isPresented ? state.selectedStop : .none
                 return .none
-            case .path(let stackAction):
+            case .path:
+                return .none
+            case .alert(.presented(.retry)):
+                state.loadingState = .loading
+                return .run { send in
+                    do {
+                        let information = try await self.busStopService.getTravelInformation()
+                        await send(.travelInformation(.success(information)))
+                    } catch {
+                        await send(.travelInformation(.failure(error)))
+                    }
+                }
+            case .alert(.dismiss):
                 return .none
             }
         }
+        .ifLet(\.$alert, action: /Action.alert)
         .forEach(\.path, action: /Action.path) {
             ArrivalTimeFeature()
         }

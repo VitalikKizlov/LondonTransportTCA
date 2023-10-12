@@ -19,16 +19,23 @@ struct BusStopView: View {
                         ProgressView()
                             .frame(maxWidth: .infinity)
                     } else {
-                        List {
-                            ForEach(viewStore.state.busStops, id: \.id) { stop in
-                                NavigationLink(state: ArrivalTimeFeature.State(busStop: stop)) {
-                                    BusStopRow(busStop: stop)
+                        if viewStore.state.busStops.isEmpty {
+                            Text("There is no information currently available!")
+                                .font(.system(size: 18, weight: .medium))
+                                .multilineTextAlignment(.center)
+                        } else {
+                            List {
+                                ForEach(viewStore.state.busStops) { stop in
+                                    NavigationLink(state: ArrivalTimeFeature.State(busStop: stop)) {
+                                        BusStopRow(busStop: stop)
+                                    }
                                 }
                             }
+                            .listStyle(.plain)
                         }
-                        .listStyle(.plain)
                     }
                 }
+                .alert(store: self.store.scope(state: \.$alert, action: { .alert($0) }))
                 .onAppear {
                     viewStore.send(.onAppear)
                 }
